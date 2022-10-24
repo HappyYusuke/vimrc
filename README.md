@@ -1,4 +1,4 @@
-# vimrc
+# vimrcの設定
 ## 前準備
 Vimをインストール
 ```sh
@@ -13,7 +13,7 @@ jediをインストール
 pip install jedi
 ```
 前準備終わり
-
+</br>
 
 ## Denoをインストール
 Denoをインストール
@@ -32,6 +32,7 @@ deno run https://deno.land/std@0.160.0/examples/welcome.ts
 ```sh
 Welcome to Deno!
 ```
+</br>
 
 ## .vimrcの設定
 以下コマンドでリポジトリをクローンし、ホームディレクトリに`.vimrc`を移動
@@ -55,7 +56,7 @@ JEDI-VIMの確認
 ```vim
 :help jedi-vim
 ```
-画像のように表示されたら成功
+画像のように表示されたら成功</br>
 <img src="https://user-images.githubusercontent.com/82449194/197625826-4a8acd37-0f39-47a7-a25e-521c15bd713b.png" width=600>I
 </br>
 
@@ -104,5 +105,5 @@ git clone https://github.com/aruhier/gnome-terminal-colors-solarized.git
 cd gnome-terminal-colors-solarized
 ./install.sh
 ```
-自分好みの設定にする
+自分好みの設定にする</br>
 <img src="https://user-images.githubusercontent.com/82449194/197632872-872950b3-1919-4c69-a8d5-81ad08f270ab.jpg" width=600>
