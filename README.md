@@ -25,7 +25,7 @@
 | [pum.vim](https://github.com/Shougo/pum.vim.git) | 補完ウィンドウの表示 |
 </br>
 
-# vimrcの設定
+# .vimrcの設定
 ## 前準備
 Vimをインストール
 ```sh
@@ -39,7 +39,6 @@ jediをインストール
 ```sh
 pip install jedi
 ```
-前準備終わり
 </br>
 
 ## Denoをインストール
