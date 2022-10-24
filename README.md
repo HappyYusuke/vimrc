@@ -1,3 +1,28 @@
+# 機能一覧
+## 基本設定
+* vimコマンド`/hoge`で文字列検索
+* `Esc` キーで文字列検索のハイライト切り替え
+* `Ctl + h`, `Ctl + l` で行頭、行末移動
+* `Ctl + k`, `Ctl + j` で大スクロール
+  
+## カラースキーム
+* [gruvbox](https://github.com/morhetz/gruvbox.git)
+* [solarized](https://github.com/altercation/vim-colors-solarized.git)
+* [hybrid](https://github.com/w0ng/vim-hybrid.git)
+* [atom-dark](https://github.com/gosukiwi/vim-atom-dark.git)
+* [tender](https://github.com/jacoborus/tender.vim.git)
+* [lucario](https://github.com/raphamorim/lucario.git)
+* [lucius](https://github.com/jonathanfilip/vim-lucius.git)
+
+## プラグイン
+| Plugins | Function |
+| --- | --- |
+| [jedi-vim](https://github.com/davidhalter/jedi-vim.git) |  Pythonに特化した自動補完 |
+| [indentLine](https://github.com/Yggdroot/indentLine.git) | インデントの可視化 |
+| [ddc.vim](https://github.com/Shougo/ddc.vim.git) | 自動補完 |
+| [pum.vim](https://github.com/Shougo/pum.vim.git) | 補完ウィンドウの表示 |
+</br>
+
 # vimrcの設定
 ## 前準備
 Vimをインストール
