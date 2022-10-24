@@ -34,5 +34,9 @@ Welcome to Deno!
 ```
 
 ## .vimrcをクローン
+以下コマンドでリポジトリをクローンし、ホームディレクトリに`.vimrc`を移動
 ```sh
-git clone 
+cd ~/
+git clone https://github.com/HappyYusuke/vimrc.git
+mv ~/vimrc/.vimrc .
+```
