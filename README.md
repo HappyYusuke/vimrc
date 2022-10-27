@@ -51,7 +51,7 @@ curl -fsSL https://deno.land/install.sh | sh
 export DENO_INSTALL="~/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 ```
-以下コマンドを実行して、[Welcome to Deno!]が帰ってくればインストール成功
+以下コマンドを実行して、`Welcome to Deno!` が帰ってくればインストール成功
 ```sh
 deno run https://deno.land/std@0.160.0/examples/welcome.ts
 ```
