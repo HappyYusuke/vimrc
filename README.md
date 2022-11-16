@@ -4,6 +4,7 @@
 * `Esc` キーで文字列検索のハイライト切り替え
 * `Ctl + h`, `Ctl + l` で行頭、行末移動
 * `Ctl + k`, `Ctl + j` で大スクロール
+</br>
   
 ## カラースキーム
 * [gruvbox](https://github.com/morhetz/gruvbox.git)
@@ -13,6 +14,7 @@
 * [tender](https://github.com/jacoborus/tender.vim.git)
 * [lucario](https://github.com/raphamorim/lucario.git)
 * [lucius](https://github.com/jonathanfilip/vim-lucius.git)
+</br>
 
 ## プラグイン
 | Plugins | Function |
@@ -23,7 +25,7 @@
 | [pum.vim](https://github.com/Shougo/pum.vim.git) | 補完ウィンドウの表示 |
 </br>
 
-# vimrcの設定
+# .vimrcの設定
 ## 前準備
 Vimをインストール
 ```sh
@@ -37,7 +39,6 @@ jediをインストール
 ```sh
 pip install jedi
 ```
-前準備終わり
 </br>
 
 ## Denoをインストール
@@ -50,7 +51,7 @@ curl -fsSL https://deno.land/install.sh | sh
 export DENO_INSTALL="~/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 ```
-以下コマンドを実行して、[Welcome to Deno!]が帰ってくればインストール成功
+以下コマンドを実行して、`Welcome to Deno!` が帰ってくればインストール成功
 ```sh
 deno run https://deno.land/std@0.160.0/examples/welcome.ts
 ```
