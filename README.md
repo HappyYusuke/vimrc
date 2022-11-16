@@ -18,7 +18,7 @@
 
 ## プラグイン
 ### プラグイン一覧
-| Plugins | Function |
+| Plugins | Functions |
 | --- | --- |
 | [jedi-vim](https://github.com/davidhalter/jedi-vim.git) |  Pythonに特化した自動補完 |
 | [indentLine](https://github.com/Yggdroot/indentLine.git) | インデントの可視化 |
