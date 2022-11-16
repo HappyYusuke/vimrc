@@ -125,6 +125,8 @@ call plug#begin()
     Plug 'Shougo/pum.vim'
     " UIオプション
     Plug 'Shougo/ddc-ui-native'
+    " pythonの構文チェック用のプラグイン
+    Plug 'nvie/vim-flake8'
 call plug#end()
 
 " ddc.vimの設定----------------------
@@ -162,3 +164,14 @@ let g:indentLine_color_term=239
 let g:indentLine_color_gui='#708090'
 let g:indentLine_char='¦'
 
+" vim-flake8の設定--------------------
+" ファイル保存時に構文チェック
+autocmd BufWritePost *.py call Flake8()
+" ファイル内にマークを表示
+let g:flake8_show_in_file=1
+" 左端にシンボルを表示
+let g:flake8_show_in_gutter=1
+" Quickfixの位置
+let g:flake8_quickfix_location="topleft"
+" Quickfixの高さ
+let g:flake8_quickfix_height=7
