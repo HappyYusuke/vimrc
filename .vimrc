@@ -166,8 +166,10 @@ let g:indentLine_char='¦'
 
 " vim-flake8の設定--------------------
 " ファイル保存時に構文チェック
-autocmd BufWritePost *.py call Flake8()
+"autocmd BufWritePost *.py call Flake8()
 " ファイル内にマークを表示
+" キーバインドの変更
+autocmd FileType python map <C-f> :call Flake8()<CR>
 let g:flake8_show_in_file=1
 " 左端にシンボルを表示
 let g:flake8_show_in_gutter=1
