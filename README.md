@@ -17,6 +17,7 @@
 </br>
 
 ## プラグイン
+### プラグイン一覧
 | Plugins | Function |
 | --- | --- |
 | [jedi-vim](https://github.com/davidhalter/jedi-vim.git) |  Pythonに特化した自動補完 |
@@ -26,7 +27,17 @@
 | [vim-flake8](https://github.com/nvie/vim-flake8.git) | Pythonの構文チェック |
 </br>
 
-# .vimrcの設定
+### プラグイン使い方
+#### 補完ウィンドウの移動
+> `Tab` キーで下に移動、`Shift+Tab` キーで上に移動
+#### Pythonの構文チェック
+> `Ctrl+f` キーか `F7` キーで構文チェック
+
+
+
+</br>
+
+# .vimrcの環境を整える
 ## 前準備
 Vimをインストール
 ```sh
