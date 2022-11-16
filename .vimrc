@@ -6,6 +6,7 @@
 set number " 行番号を表示
 set encoding=utf-8 " ファイル読み込み時の文字コードの設定
 scriptencoding utf-8 " Vim script内でマルチバイト文字を使う場合の設定
+set noswapfile "スワップファイルを作らない
 
 " 文字コード
 set fileencoding=utf-8 " 保存時の文字コード
@@ -65,7 +66,8 @@ endif
 "------------------------
 " カラースキーム
 "------------------------
-syntax enable " 構文に色をつける
+"syntax enable 
+" 構文に色をつける
 "set t_Co=256
 
 " gruvbox
@@ -78,10 +80,11 @@ syntax enable " 構文に色をつける
 "colorscheme solarized
 "-------
 " hybrid
-"set background=dark
-"colorscheme hybrid
+set background=dark
+colorscheme hybrid
 "-------
 " atom-dark
+"colorscheme atom-dark
 "colorscheme atom-dark-256
 "-------
 " tender
@@ -91,8 +94,8 @@ syntax enable " 構文に色をつける
 "colorscheme lucario
 "-------
 " lucius
-colorscheme lucius
-set background=dark
+"colorscheme lucius
+"set background=dark
 
 
 "------------------------
@@ -120,12 +123,15 @@ call plug#begin()
     Plug 'Shougo/ddc-converter_remove_overlap'
     " ポップアップウィンドウを表示するプラグイン
     Plug 'Shougo/pum.vim'
+    " UIオプション
+    Plug 'Shougo/ddc-ui-native'
 call plug#end()
 
 " ddc.vimの設定----------------------
 " 使いたいsourceを指定する
 call ddc#custom#patch_global('completionMenu', 'pum.vim')
 call ddc#custom#patch_global('sources', ['around'])
+call ddc#custom#patch_global('ui', 'native')
 
 " sourceのOptionのmatchersにfilter指定することで、候補の一覧を制御できる
 call ddc#custom#patch_global('sourceOptions', {
@@ -144,13 +150,12 @@ call ddc#enable()
 inoremap <Tab> <Cmd>call pum#map#insert_relative(+1)<CR>
 inoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
 
-
 " supertabの設定----------------------
 " (JEDI-VIMでTab補完できるようにする)
 let g:SuperTabContextDefaultCompletionType = "context"
 let g:SuperTabDefaultCompletionType = "<c-n>"
 " ポップアップウィンドウを無効にしたい場合は以下をアンコメント
-"autocmd FileType python setlocal completeopt-=preview
+autocmd FileType python setlocal completeopt-=preview
 
 " indentLineの設定--------------------
 let g:indentLine_color_term=239
