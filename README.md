@@ -23,6 +23,7 @@
 | [indentLine](https://github.com/Yggdroot/indentLine.git) | インデントの可視化 |
 | [ddc.vim](https://github.com/Shougo/ddc.vim.git) | 自動補完 |
 | [pum.vim](https://github.com/Shougo/pum.vim.git) | 補完ウィンドウの表示 |
+| [vim-flake8](https://github.com/nvie/vim-flake8.git) | Pythonの構文チェック |
 </br>
 
 # .vimrcの設定
@@ -38,6 +39,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 jediをインストール
 ```sh
 pip install jedi
+```
+Flake8をインストール
+```sh
+sudo apt install flake8
 ```
 </br>
 
