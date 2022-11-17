@@ -105,7 +105,7 @@ JEDI-VIMの確認
 ```vim
 :help jedi-vim
 ```
-画像のように表示されたら成功</br>
+画像のように表示されたら成功</br></br>
 <img src="https://user-images.githubusercontent.com/82449194/197625826-4a8acd37-0f39-47a7-a25e-521c15bd713b.png" width=600>I
 </br>
 
