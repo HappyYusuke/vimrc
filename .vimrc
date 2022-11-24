@@ -152,6 +152,10 @@ call ddc#enable()
 inoremap <Tab> <Cmd>call pum#map#insert_relative(+1)<CR>
 inoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
 
+" jedi-vimの設定----------------------
+" ポップアップウィンドウ（構文のヒント）を表示しない
+autocmd FileType python setlocal completeopt-=preview
+
 " supertabの設定----------------------
 " (JEDI-VIMでTab補完できるようにする)
 let g:SuperTabContextDefaultCompletionType = "context"
