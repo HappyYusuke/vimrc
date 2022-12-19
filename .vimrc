@@ -127,6 +127,8 @@ call plug#begin()
     Plug 'Shougo/ddc-ui-native'
     " pythonの構文チェック用のプラグイン
     Plug 'nvie/vim-flake8'
+    " 括弧とクォーテーションを補完するプラグイン
+    Plug 'higashi000/dps-kakkonan'
 call plug#end()
 
 " ddc.vimの設定----------------------

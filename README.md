@@ -25,6 +25,7 @@
 | [ddc.vim](https://github.com/Shougo/ddc.vim.git) | 自動補完 |
 | [pum.vim](https://github.com/Shougo/pum.vim.git) | 補完ウィンドウの表示 |
 | [vim-flake8](https://github.com/nvie/vim-flake8.git) | Pythonの構文チェック |
+| [dps-kakkonan](https://github.com/higashi000/dps-kakkonan.git) | 括弧とクォーテーションの補完 |
 </br>
 
 ### プラグイン使い方
