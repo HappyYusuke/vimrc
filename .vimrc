@@ -115,8 +115,6 @@ call plug#begin()
     Plug 'vim-denops/denops.vim'
     " カーソル周辺の既出単語を補完するsource
     Plug 'Shougo/ddc-around'
-    " ファイル名を補完するsource
-    Plug 'LumaKernel/ddc-file'
     " 入力中の単語を補完の対象にするfilter
     Plug 'Shougo/ddc-matcher_head'
     " 補完候補を適切にソートするfilter
@@ -134,7 +132,7 @@ call plug#end()
 " ddc.vimの設定----------------------
 " 使いたいsourceを指定する
 call ddc#custom#patch_global('completionMenu', 'pum.vim')
-call ddc#custom#patch_global('sources', ['around', 'file'])
+call ddc#custom#patch_global('sources', ['around'])
 call ddc#custom#patch_global('ui', 'native')
 
 " sourceのOptionのmatchersにfilter指定することで、候補の一覧を制御できる
@@ -145,20 +143,11 @@ call ddc#custom#patch_global('sourceOptions', {
     \    'converters': ['converter_remove_overlap'],
     \ },
     \ 'around': {'mark': 'Around'
-    \ },
-    \ 'file': {
-    \   'mark': 'file',
-    \   'isVolatile': v:true,
-    \   'forceCompletionPattern': '\S/\S*'
     \ }
     \ })
 
 " ddc.vimの機能を有効にする
 call ddc#enable()
-
-" ddc-fileの補助
-" vimを起動時に.vimrcをsourceする
-autocmd VimEnter * :source $MYVIMRC
 
 " pum.vimの設定-----------------------
 inoremap <Tab> <Cmd>call pum#map#insert_relative(+1)<CR>
