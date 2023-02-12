@@ -43,6 +43,8 @@ nnoremap <C-l> $
 " ページ移動
 nnoremap <C-k> <C-u>
 nnoremap <C-j> <C-d>
+" ファイル移動
+nnoremap <C-n> <C-^>
 
 " カッコ・タグジャンプ
 set showmatch " 括弧の対応関係を一覧表示する
