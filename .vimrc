@@ -135,9 +135,9 @@ call plug#end()
 
 " ddc.vimの設定----------------------
 " 使いたいsourceを指定する
-call ddc#custom#patch_global('completionMenu', 'pum.vim')
-call ddc#custom#patch_global('sources', ['around'])
 call ddc#custom#patch_global('ui', 'native')
+call ddc#custom#patch_global('uiOptions', 'pum.vim')
+call ddc#custom#patch_global('sources', ['around'])
 
 " sourceのOptionのmatchersにfilter指定することで、候補の一覧を制御できる
 call ddc#custom#patch_global('sourceOptions', {
@@ -151,7 +151,7 @@ call ddc#custom#patch_global('sourceOptions', {
     \ })
 
 " ddc.vimの機能を有効にする
-call ddc#enable()
+"call ddc#enable()
 
 " pum.vimの設定-----------------------
 inoremap <Tab> <Cmd>call pum#map#insert_relative(+1)<CR>
@@ -160,8 +160,8 @@ inoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
 " jedi-vimの設定----------------------
 " ポップアップウィンドウ（構文のヒント）を表示しない
 autocmd FileType python setlocal completeopt-=preview
-let g:SuperTabContextDefaultCompletionType = "context"
-let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabContextDefaultCompletionType = 'context'
+let g:SuperTabDefaultCompletionType = '<c-n>'
 
 " indentLineの設定--------------------
 let g:indentLine_color_term=239
@@ -181,5 +181,4 @@ let g:flake8_show_in_gutter=1
 let g:flake8_quickfix_location="topleft"
 " Quickfixの高さ
 let g:flake8_quickfix_height=7
-
 
