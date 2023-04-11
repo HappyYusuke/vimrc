@@ -63,6 +63,18 @@ Flake8をインストール
 ```sh
 sudo apt install flake8
 ```
+Vimが最新バージョンではない場合
+```sh
+sudo apt update
+sudo apt install software-properties-common
+#リポジトリの追加
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+#バージョン確認
+vim --version
+```
+
 </br>
 
 ## Denoをインストール
