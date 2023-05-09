@@ -6,7 +6,8 @@
 set number " 行番号を表示
 set encoding=utf-8 " ファイル読み込み時の文字コードの設定
 scriptencoding utf-8 " Vim script内でマルチバイト文字を使う場合の設定
-set noswapfile "スワップファイルを作らない
+set noswapfile " スワップファイルを作らない
+set clipboard=unnamedplus " vimのヤンクで外部にコピペできるように
 
 " 文字コード
 set fileencoding=utf-8 " 保存時の文字コード
@@ -70,7 +71,7 @@ endif
 "------------------------
 "syntax enable 
 " 構文に色をつける
-"set t_Co=256
+set t_Co=256
 
 " gruvbox
 "set background=dark
@@ -82,8 +83,8 @@ endif
 "colorscheme solarized
 "-------
 " hybrid
-set background=dark
-colorscheme hybrid
+"set background=dark
+"colorscheme hybrid
 "-------
 " atom-dark
 "colorscheme atom-dark
@@ -98,6 +99,23 @@ colorscheme hybrid
 " lucius
 "colorscheme lucius
 "set background=dark
+"-------
+" material-theme
+"set background=dark
+"colorscheme material-theme
+"-------
+" flatland
+"colorscheme flatland
+"--------
+" jellybeans
+colorscheme jellybeans
+"--------
+" PaperColor
+"set background=dark
+"colorscheme PaperColor
+"--------
+" iceberg
+"colorscheme iceberg
 
 
 "------------------------
@@ -130,7 +148,11 @@ call plug#begin()
     " pythonの構文チェック用のプラグイン
     Plug 'nvie/vim-flake8'
     " 括弧とクォーテーションを補完するプラグイン
-    Plug 'higashi000/dps-kakkonan'
+    "Plug 'higashi000/dps-kakkonan'
+    " LaTeX
+    Plug 'lervag/vimtex'
+    " ディレクトリのツリー表示
+    Plug 'lambdalisue/fern.vim'
 call plug#end()
 
 " ddc.vimの設定----------------------
@@ -182,3 +204,5 @@ let g:flake8_quickfix_location="topleft"
 " Quickfixの高さ
 let g:flake8_quickfix_height=7
 
+" vimtexの設定
+let g:latex_latexmk_options = "-pdf"
