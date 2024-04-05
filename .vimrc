@@ -108,7 +108,7 @@ set t_Co=256
 "colorscheme flatland
 "--------
 " jellybeans
-colorscheme jellybeans
+"colorscheme jellybeans
 "--------
 " PaperColor
 "set background=dark
@@ -130,21 +130,21 @@ call plug#begin()
     " インデントを可視化するプラグイン
     Plug 'Yggdroot/indentLine'
     " ddc.vim本体
-    Plug 'Shougo/ddc.vim'
+    "Plug 'Shougo/ddc.vim'
     " DenoでVimプラグインを開発するためのプラグイン
-    Plug 'vim-denops/denops.vim'
+    "Plug 'vim-denops/denops.vim'
     " カーソル周辺の既出単語を補完するsource
-    Plug 'Shougo/ddc-around'
+    "Plug 'Shougo/ddc-around'
     " 入力中の単語を補完の対象にするfilter
-    Plug 'Shougo/ddc-matcher_head'
+    "Plug 'Shougo/ddc-matcher_head'
     " 補完候補を適切にソートするfilter
-    Plug 'Shougo/ddc-sorter_rank'
+    "Plug 'Shougo/ddc-sorter_rank'
     " 補完候補の重複を防ぐためのfilter
-    Plug 'Shougo/ddc-converter_remove_overlap'
+    "Plug 'Shougo/ddc-converter_remove_overlap'
     " ポップアップウィンドウを表示するプラグイン
     Plug 'Shougo/pum.vim'
     " UIオプション
-    Plug 'Shougo/ddc-ui-native'
+    "Plug 'Shougo/ddc-ui-native'
     " pythonの構文チェック用のプラグイン
     Plug 'nvie/vim-flake8'
     " 括弧とクォーテーションを補完するプラグイン
@@ -157,20 +157,20 @@ call plug#end()
 
 " ddc.vimの設定----------------------
 " 使いたいsourceを指定する
-call ddc#custom#patch_global('ui', 'native')
-call ddc#custom#patch_global('uiOptions', 'pum.vim')
-call ddc#custom#patch_global('sources', ['around'])
+"call ddc#custom#patch_global('ui', 'native')
+"call ddc#custom#patch_global('uiOptions', 'pum.vim')
+"call ddc#custom#patch_global('sources', ['around'])
 
 " sourceのOptionのmatchersにfilter指定することで、候補の一覧を制御できる
-call ddc#custom#patch_global('sourceOptions', {
-    \ '_': {
-    \    'matchers': ['matcher_head'],
-    \    'sorters': ['sorter_rank'],
-    \    'converters': ['converter_remove_overlap'],
-    \ },
-    \ 'around': {'mark': 'Around'
-    \ }
-    \ })
+"call ddc#custom#patch_global('sourceOptions', {
+"    \ '_': {
+"    \    'matchers': ['matcher_head'],
+"    \    'sorters': ['sorter_rank'],
+"    \    'converters': ['converter_remove_overlap'],
+"    \ },
+"    \ 'around': {'mark': 'Around'
+"    \ }
+"    \ })
 
 " ddc.vimの機能を有効にする
 "call ddc#enable()
