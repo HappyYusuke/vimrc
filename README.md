@@ -46,6 +46,13 @@
 </br>
 
 # .vimrcの環境を整える
+## 忙しい人へ
+```sh
+git clone https://github.com/HappyYusuke/vimrc.git
+cd ~/vimrc
+sudo chmod +x vimrc_setup.bash
+./vimrc_setup.bash
+```
 ## 前準備
 Vimをインストール
 ```sh
