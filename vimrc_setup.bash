@@ -17,4 +17,4 @@ cd ~/
 cp ~/vimrc/.vimrc .
 
 # Setup
-vim + ":PlugInstall" +:q
+vim + ":PlugInstall" +:q +:q
