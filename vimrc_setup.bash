@@ -16,5 +16,5 @@ sudo apt install flake8
 cd ~/
 cp ~/vimrc/.vimrc .
 
-# Setup
-vim + ":PlugInstall" +:q +:q
+# Install plugin
+VIM_PLUGIN_INSTALL=1 vim +qall

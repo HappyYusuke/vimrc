@@ -155,6 +155,10 @@ call plug#begin()
     Plug 'lambdalisue/fern.vim'
 call plug#end()
 
+if $VIM_PLUGIN_INSTALL == '1'
+    PlugInstall
+endif
+
 " ddc.vimの設定----------------------
 " 使いたいsourceを指定する
 "call ddc#custom#patch_global('ui', 'native')
