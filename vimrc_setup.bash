@@ -2,6 +2,11 @@
 
 
 # Install vim
+sudo apt update
+sudo apt install software-properties-common
+#リポジトリの追加
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
 sudo apt install vim
 
 
