@@ -3,11 +3,11 @@
 
 # Install vim
 sudo apt update
-sudo apt install software-properties-common
+sudo apt -y install software-properties-common
 #リポジトリの追加
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update
-sudo apt install vim
+sudo apt -y install vim
 
 
 # Install plug.vim
@@ -19,7 +19,7 @@ pip install jedi
 
 
 # Flake8
-sudo apt install flake8
+sudo apt -y install flake8
 
 
 # Move .vimrc
